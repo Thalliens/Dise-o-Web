@@ -1,0 +1,42 @@
+body{
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: url("../c01/images/constructive-backdrop.jpg");
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #58595B;
+    margin: 0, auto;
+    padding: 30px;
+    text-align: center;
+    
+}
+h1, h3, a{
+    color: #00ab95;
+    text-decoration: none;
+}
+a:hover{
+    color: #ED6C7B;
+}
+table{
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-color: #00cc66;
+
+}
+
+td, tr{
+    border-radius: 3px;
+    border: 1px solid;
+    background-color: #FFF;
+    padding: 10px;
+    margin-bottom: 3px;
+    text-align: left;
+    border-color: #00cc66;
+}
+.blank{
+    background: #F7F7F7;
+}
+

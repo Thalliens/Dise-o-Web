@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructive &amp; co.</title>
+    <link rel="stylesheet" href="css/c07.css">
+</head>
+<body>
+    <h1>Constructive &amp; Co.</h1>
+    <script src="js/contenido.js"></script>
+    <p>Para todos sus diseños llame al <br><em>301-794-7831</em></p>
+    <div>
+        <template id="main">
+            <button onclick="contenidoVariables()">Mostrar contenido</button>
+            <p id="paragraph"></p>
+        </template>
+        
+        <script type="text/javascript">
+            function contenidoVariables(){
+                var nombre = "Roberto";
+                var edad = 22;
+                var altura = 1.78;
+                var estado_civil = "Soltero";
+                document.getElementById("paragraph").innerHTML = `Nombre: ${nombre}<br>Edad: ${edad}<br>Altura: ${altura}<br>Estado civil: ${estado_civil}`;
+            }
+            function init(){
+                let mainTemplate = document.getElementById("main");
+                let parent = document.createElement("div");
+                parent.append(mainTemplate.content.cloneNode(true));
+                document.body.append(parent);
+            }
+            document.onload = init();
+        </script>
+    </div>
+</body>
+</html>
